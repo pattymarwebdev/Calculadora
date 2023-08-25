@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora</h1>
+        
+        <div class="calculator-body">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button class="number" onclick="appendToDisplay('7')">7</button>
+                <button class="number" onclick="appendToDisplay('8')">8</button>
+                <button class="number" onclick="appendToDisplay('9')">9</button>
+                <button class="operator" onclick="appendToDisplay('+')">+</button>
+                <button class="number" onclick="appendToDisplay('4')">4</button>
+                <button class="number" onclick="appendToDisplay('5')">5</button>
+                <button class="number" onclick="appendToDisplay('6')">6</button>
+                <button class="operator" onclick="appendToDisplay('-')">-</button>
+                <button class="number" onclick="appendToDisplay('1')">1</button>
+                <button class="number" onclick="appendToDisplay('2')">2</button>
+                <button class="number" onclick="appendToDisplay('3')">3</button>
+                <button class="operator" onclick="appendToDisplay('*')">*</button>
+                <button class="number" onclick="appendToDisplay('0')">0</button>
+                <button class="operator" onclick="calculate()">=</button>
+                <button class="operator" onclick="appendToDisplay('/')">/</button>
+                <button class="clear" onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/patriciamarciano" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/pattymayaoficial" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/patriciamarpaulino" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
